@@ -29,7 +29,7 @@ function ListCombinations(nums, n) {
 
   backtrack(0, "", true);
 
-  return output;
+  return output.map((item) => item.split("").join("&"));
 }
 
 // xóa những số trùng nhau trong mảng đầu vào
@@ -50,4 +50,4 @@ function removeDuplicate(nums) {
 console.log(ListCombinations([1, 1, 2, 7, 5, 4, 7, 9], 3));
 // console.log(ListCombinations([1, 1, 2, 3], 3));
 // console.log(ListCombinations([1, 2, 3, 4, 5], 3));
-// console.log(ListCombinations([1, 3, 2, 4, 5], 3));
+// console.log(ListCombinations([1, 3, 2, 4, 5], 5));
